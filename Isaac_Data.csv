@@ -1,0 +1,58 @@
+﻿Date,Time,Timestamp,Temperature,SpO2,Medicine/Treatments Given,Notes
+2021-10-02,5:15am,2021-10-02 5:15am,97.7,,Robitussin and Breathing Treatment,"Came into our room complaining of really bad sore throat and having trouble breathing, sounded really raspy/wheezy"
+2021-10-02,6:20am,2021-10-02 6:20am,99.3,,Tylenol,Ate sausage corn dogs and kept them down
+2021-10-02,6:55am,2021-10-02 6:55am,,99,,Set up vaporizer with Vapo liquid and eucalyptus
+2021-10-02,7:15am,2021-10-02 7:15am,,,Nauzene; Vitamin D/Zinc Gummy,Had a bout of diarrhea; gave him nauzene for nausea and a vitamin gummy for immune support (vitamin D and zinc)
+2021-10-02,7:30am,2021-10-02 7:30am,98.7,99,,
+2021-10-02,8:30am,2021-10-02 8:30am,98.8,99,,Wasn't complaining of nausea anymore
+2021-10-02,9:30am,2021-10-02 9:30am,99.1,98,,"Throat still hurting, no more nausea, said he had a small headach, not having trouble breathing"
+2021-10-02,10:30am,2021-10-02 10:30am,97.8,98,,No changes in symptoms
+2021-10-02,11:45am,2021-10-02 11:45am,98.8,98,,Said his throat hurts pretty bad
+2021-10-02,12:15pm,2021-10-02 12:15pm,,,Breathing Treatment,Breathing Treatment
+2021-10-02,1:00pm,2021-10-02 1:00pm,97.8,97,,
+2021-10-02,2:18pm,2021-10-02 2:18pm,98.7,99,,
+2021-10-02,3:18pm,2021-10-02 3:18pm,98.2,97,,
+2021-10-02,4:18pm,2021-10-02 4:18pm,98.7,98,,Still says he feels okay
+2021-10-02,5:33pm,2021-10-02 5:33pm,99.1,99,,
+2021-10-02,7:00pm,2021-10-02 7:00pm,98.7,98,,
+2021-10-02,8:10pm,2021-10-02 8:10pm,98.3,99,Breathing Treatment; Tylenol; Robitussin PM,"Breathing Treatment, ibuprofen, robitussin"
+2021-10-02,8:51pm,2021-10-02 8:51pm,98.7,97,,Went to sleep
+2021-10-03,2:00am,2021-10-03 2:00am,98.1,99,Breathing Treatment; Tylenol,"Breathing treatment, tylenol, throat hurts again, sounds a little wheezy, lungs sound clear"
+2021-10-03,8:00am,2021-10-03 8:00am,99.3,99,Breathing Treatment,"Breathing Treatment, lungs sound clear, throat still hurts"
+2021-10-03,10:05am,2021-10-03 10:05am,99.7,99,Tylenol,Tylenol
+2021-10-03,11:10am,2021-10-03 11:10am,98.2,99,,
+2021-10-03,11:27am,2021-10-03 11:27am,,,Breathing Treatment,"Breathing treatment; said he felt like he needed another breathing treatment, coughed up some mucus, said his throat hurts at a 9/10 because of all the coughing"
+2021-10-03,12:05pm,2021-10-03 12:05pm,99.8,99,,"Coughed up mucus again, cough sounded a little dry, says he feels okay"
+2021-10-03,1:30pm,2021-10-03 1:30pm,100.3,98,Ibuprofen,Ibuprofen; said he feels pretty bad right now
+2021-10-03,2:30pm,2021-10-03 2:30pm,98.7,98,,
+2021-10-03,3:09pm,2021-10-03 3:09pm,99.1,99,,"Says when he coughs it hurts in his throat, not in his chest"
+2021-10-03,4:04pm,2021-10-03 4:04pm,99.1,99,,
+2021-10-03,5:13pm,2021-10-03 5:13pm,99.1,98,Breathing Treatment,"Says his throat is at a 1/10 right now; no nausea; small headache; lungs sounded clear, but heard some rattling after a cough, decided to do a breathing treatment"
+2021-10-03,6:30pm,2021-10-03 6:30pm,98.6,99,Tylenol,says his chest still feels kind of mucus-y
+2021-10-03,7:35pm,2021-10-03 7:35pm,97.8,98,,
+2021-10-03,8:30pm,2021-10-03 8:30pm,98.3,98,,
+2021-10-03,9:00pm,2021-10-03 9:00pm,98.7,99,,
+2021-10-04,12:15am,2021-10-04 12:15am,102.3,97,Ibuprofen,Woke up crying with a fever; giving ibuprofen to get fever down
+2021-10-04,12:30am,2021-10-04 12:30am,100.8,,,Fever already starting to go down
+2021-10-04,12:45am,2021-10-04 12:45am,99.4,,,Ibuprofen working
+2021-10-04,1:10am,2021-10-04 1:10am,98.2,,,
+2021-10-04,7:20am,2021-10-04 7:20am,99.1,97,"tylenol, breathing treatment","Throat hurts badly, said his chest hurts"
+2021-10-04,8:34am,2021-10-04 8:34am,100.7,99,,"Said his throat wasn't hurting, chest felt fine, cough isn't sounding dry/mucus coming up with coughs, still has sinus congestion"
+2021-10-04,9:39am,2021-10-04 9:39am,98.4,99,,"says his throat is ""good"", chest feels good, no nausea or headache"
+2021-10-04,10:32am,2021-10-04 10:32am,98.7,98,,"Says he feels ""amazing"", throat is good, chest feels good"
+2021-10-04,11:28am,2021-10-04 11:28am,98.6,99,Breathing Treatment,still says that he feels great
+2021-10-04,12:34pm,2021-10-04 12:34pm,99.1,99,,"Throat is good, said he's feeling ""amazing"""
+2021-10-04,1:32pm,2021-10-04 1:32pm,99.8,98,,"Says he still feels good; if temp doesn't go down by 2pm, giving ibuprofen"
+2021-10-04,2:06pm,2021-10-04 2:06pm,100.1,,Ibuprofen,Checking temp again in 30 minutes
+2021-10-04,2:35pm,2021-10-04 2:35pm,100.1,99,,Going to check again in 30 minutes
+2021-10-04,3:30pm,2021-10-04 3:30pm,98.8,98,,
+2021-10-04,4:47pm,2021-10-04 4:47pm,98.9,98,,
+2021-10-04,6:31pm,2021-10-04 6:31pm,98.5,99,,Said he feels good; throat doesn't hurt
+2021-10-04,7:49pm,2021-10-04 7:49pm,98.6,98,,Said he feels good
+2021-10-04,8:20pm,2021-10-04 8:20pm,98.5,98,"Breathing Treatment, Tylenol",Coughed so hard he threw up; was mostly mucus
+2021-10-04,8:30pm,2021-10-04 8:30pm,,,Ibuprofen,Gave him ibuprofen after he coughed so hard he threw up mucus
+2021-10-04,9:00pm,2021-10-04 9:00pm,,,Robitussin PM,Coughed really hard and spit up some mucus; gave him some robitussin PM
+2021-10-05,1:02am,2021-10-05 1:02am,97.8,98,Breathing treatment,
+2021-10-05,6:45am,2021-10-05 6:45am,,,Tylenol,
+2021-10-05,8:27am,2021-10-05 8:27am,99.4,98,,"Said his throat doesn't hurt, chest doesn't hurt, sounds a little raspy"
+2021-10-05,9:35am,2021-10-05 9:35am,99.6,99,,"Said his throat hurts a little, but feels fine, still sounds a little raspy"
