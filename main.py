@@ -1,6 +1,5 @@
 import csv
 import pandas
-import justpy as jp
 from datetime import datetime
 from pytz import utc
 import matplotlib.pyplot as plt
