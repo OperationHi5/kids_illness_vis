@@ -1,19 +1,16 @@
 import csv
-import tkinter
-
 import pandas
+import sqlite3
 from tkinter import *
-from datetime import datetime
-
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from matplotlib.figure import Figure
-from pytz import utc
+from database import *
 import matplotlib.pyplot as plt
 
 
+# Creating the main tkinter window for the app to run
 window = Tk()
 window.title("Kids' Illness Tracker")
 
+# This large section is setting up the labels and text entry fields to capture input
 child_labeltext = StringVar()
 child_labeltext.set("Which kid is this for?")
 child_label = Label(window, textvariable=child_labeltext, height=4)
@@ -79,6 +76,8 @@ error_labeltext.set("Please enter either Isaac's or Oliver's Name")
 error_label = Label(window, textvariable=error_labeltext, height=4)
 
 
+# Capturing the data that was entered in the fields and associating each field with a variable
+# So that the data can be passed into the add_vitals function and added to the spreadsheets
 def input_vitals():
     kids = child_value.get()
     date = date_value.get()
@@ -90,34 +89,52 @@ def input_vitals():
     add_vitals(kids, date, time, temp, spo2, meds, extra_notes)
 
 
+# Takes the data that was passed from the input_vitals function deciding which child it's for
+# and inserting the inputted data into a new row on the spreadsheet
 def add_vitals(kids, date, time, temp, spo2, meds, extra_notes):
     timestamp = date + ' ' + time
     new_vitals = (date, time, timestamp, temp, spo2, meds, extra_notes)
 
-    if kids.lower() == 'isaac':
-        with open("Isaac_Data.csv", 'a+', newline='\n') as write_obj:
-            writer = csv.writer(write_obj)
-            writer.writerow(new_vitals)
-        success_label.grid(row=13, column=1)
-        return True
-    elif kids.lower() == 'oliver':
-        with open("Oliver_Data.csv", 'a+', newline='\n') as write_obj:
-            writer = csv.writer(write_obj)
-            writer.writerow(new_vitals)
-        success_label.grid(row=13, column=1)
-        return True
-    else:
-        error_label.grid(row=13, column=1)
-        return False
+    insert(kids, timestamp, temp, spo2, meds, extra_notes)
+    success_label.grid(row=13, column=1)
+    # if kids.lower() == 'isaac':
+    #     with open("Isaac_Data.csv", 'a+', newline='\n') as write_obj:
+    #         writer = csv.writer(write_obj)
+    #         writer.writerow(new_vitals)
+    #     success_label.grid(row=13, column=1)
+    #     return True
+    # elif kids.lower() == 'oliver':
+    #     with open("Oliver_Data.csv", 'a+', newline='\n') as write_obj:
+    #         writer = csv.writer(write_obj)
+    #         writer.writerow(new_vitals)
+    #     success_label.grid(row=13, column=1)
+    #     return True
+    # else:
+    #     error_label.grid(row=13, column=1)
+    #     return False
 
 
+# This uses matplotlib to take all of the data from the spreadsheet and turning it into a spreadsheet
 def scatter_time():
-    data = pandas.read_csv("Isaac_Data.csv", parse_dates=['Timestamp'])
-    time_of_day = data['Timestamp']
-    temperature = data['Temperature']
-    o2 = data['SpO2']
-    treatments = data['Medicine/Treatments Given']
-    notes = data['Notes']
+    name = 'Isaac'
+    data = view(name)
+    time_of_day = []
+    temperature = []
+    o2 = []
+    treatments = []
+    notes = []
+    for row in data:
+        time_of_day.append(row[1])
+        temperature.append(row[2])
+        o2.append(row[3])
+        treatments.append(row[4])
+        notes.append(row[5])
+    # data = pandas.read_csv("Isaac_Data.csv", parse_dates=['Timestamp'])
+    # time_of_day = data['Timestamp']
+    # temperature = data['Temperature']
+    # o2 = data['SpO2']
+    # treatments = data['Medicine/Treatments Given']
+    # notes = data['Notes']
     plt.scatter(time_of_day, temperature, alpha=0.5)
     plt.title("Isaac's Temperature Visualized")
     plt.xlabel('Time')
@@ -125,12 +142,16 @@ def scatter_time():
     plt.show()
 
 
+# Creates a submit button that runs the input_vitals function
 submit_button = Button(window, text="Submit", command=input_vitals)
 submit_button.grid(row=15, column=2)
 
+
+# Creates a Plot Vitals button that runs the scatter_time function for the scatter plot
 plot_button = Button(window, text="Plot Vitals", command=scatter_time)
 plot_button.grid(row=17, column=2)
 
+# Opens the window and starts the main loop of the program
 window.mainloop()
 
 
