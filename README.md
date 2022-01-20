@@ -1,0 +1,3 @@
+I wrote this python program while my 2 older sons were sick so that their mom and I could have a nice way of tracking their temperatures and O2 levels as well as any symptoms they were dealing with and any treatments or medicine that they had been given. There are 2 csv files that contain the original data that I was using to keep track before I added the database funtionality. Also has pandas functionality to visualize the data from the database (can be easily modified to pull the data from the csv files again) in the form of a scatter plot.
+
+I have yet to migrate the original data to the database, but the database is fully functional.
